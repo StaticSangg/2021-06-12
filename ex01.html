@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script>            
+            // 1차원 동적 배열
+            // 길이를 입력 받아서 배열 구성하기
+            var arr = new Array(0);
+            var len = parseInt(prompt("1차 배열 길이 입력"));
+            for (var i = 0; i <= len; i++) {
+                arr.push(10 * (i + 1)); 
+                // arr 배열 길이 한개 늘리면서 값을 10*(i + 1)을 넣겠다.
+
+            }
+
+            for (var i = 0; i < len; i++) {
+                document.write(arr[i], "<br>");
+                
+            }
+        </script>
+    </head>
+
+    <body>
+            
+    </body>
+</html>

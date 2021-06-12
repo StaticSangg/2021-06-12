@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script>
+            // JSON 객체 배열
+            var person_list = [
+                {"name":"name1","age":20,"height":176},  
+                {"name":"name2","age":22,"height":178},  
+                {"name":"name3","age":21,"height":179},  
+            ];
+
+            for (var i = 0; i < person_list.length; i++) {
+                document.write("name: " + person_list[i].name, "<br>" +
+                 "age: " + person_list[i].age, "<br>" +
+                  "heght: " + person_list[i].height, "<br>");
+                  document.write("---------------<br>");
+            }
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

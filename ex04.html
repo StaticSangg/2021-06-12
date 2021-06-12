@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script>
+            // 사용자 정의 객체
+            // 이미 존재하는 라이브러리 내부의 객체
+
+            var point = new Object();
+            // point에는 객체의 주소가 들어간다.
+            // new Object() -  객체 생성
+
+            point.x = 2; // 객체의 원소로 x(변수)를 추가하고 2를 넣겠다.
+            point.y = 3; // 객체의 원소로 y(변수)를 추가하고 3을 넣겠다.
+            
+            show_point();
+            
+            point.show_point = function () {
+                document.write("(" + this.x + "," + this.y + ")");
+            }
+
+            point.show_point();
+            // 객체의 멤버로 함수를 추가
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>

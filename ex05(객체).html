@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script>
+            var person = new Object();
+            person.age = Number(prompt("나이 입력"));
+            person.name = prompt("이름 입력");
+            person.height = Number(prompt("키 입력"));
+
+            person.introduce = function () {
+                document.write("나이 : " + this.age + "<br>" 
+                + "이름 : " + this.name + "<br>" 
+                + "키 : " + this.height);
+            }
+
+            person.introduce();
+
+            person2 = {
+                "name" : "이유승",
+                "age" : 20,
+                "height" : 180
+            }; // JSON 객체
+            // JavaScript Object Notation
+
+            document.write("<br>" + person2.name + "<br>" + person2.age + "<br>"  + person2.height);
+            
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>
